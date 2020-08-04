@@ -22,8 +22,17 @@ from django.urls import path
 # ]
 
 # 配置路由
-from .views import LessionTwo
+# from .views import LessionTwo
+#
+# urlpatterns = [
+#     path('two',LessionTwo.as_view(),name='tws')
+# ]
+
+# 获取音乐路由配置
+from django.urls import path
+from .views import Music
+
 
 urlpatterns = [
-    path('two',LessionTwo.as_view(),name='tws')
+    path('music',Music.as_view())
 ]

@@ -45,4 +45,4 @@ class Music(View):
             url = self.DOUBAN_MUSIC_API.format(music_name)
             response = requests.get(url)
             data = response.json()
-            return JsonResponse({'errcode':0,'errmsg':'成功',data:data})
+            return JsonResponse({'errcode':0,'errmsg':'成功','data':data})
