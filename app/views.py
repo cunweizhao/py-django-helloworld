@@ -26,6 +26,5 @@ class LessionTwo(View):
 
     def get(self,request):
 
-        message = request.GET
-
-        return HttpResponse('ok')
+        message = request.GET.get('message','这里没有内容')
+        return HttpResponse(message)
