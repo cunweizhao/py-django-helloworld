@@ -6,5 +6,11 @@
 </head>
 <body>
 {{ name }}
+
+<ul>
+{%  for item in array %}
+  <li>{{ item }}--------- {{ forloop.counter0 }}</li>
+    {% endfor %}
+</ul>
 </body>
 </html>
