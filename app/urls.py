@@ -28,13 +28,17 @@ from django.urls import path
 #     path('two',LessionTwo.as_view(),name='tws')
 # ]
 
+
+#========================
 # 获取音乐路由配置
 from django.urls import path
-from .views import Music,Movie,Book
+# from .views import Music,Movie,Book
+from .views import Index
 
 
 urlpatterns = [
-    path('music',Music.as_view()),
-    path('movie',Movie.as_view()),
-    path('book',Movie.as_view())
+    # path('music',Music.as_view()),
+    # path('movie',Movie.as_view()),
+    # path('book',Movie.as_view())
+    path('<str:name>',Index.as_view())
 ]
