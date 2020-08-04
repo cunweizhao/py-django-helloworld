@@ -30,9 +30,10 @@ from django.urls import path
 
 # 获取音乐路由配置
 from django.urls import path
-from .views import Music
+from .views import Music,Movie
 
 
 urlpatterns = [
-    path('music',Music.as_view())
+    path('music',Music.as_view()),
+    path('movie',Movie.as_view())
 ]
